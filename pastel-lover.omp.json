@@ -27,7 +27,7 @@
           "style": "diamond",
           "template": "...{{ repeat (len .Format) \".\" }}. ",
           "properties": {
-            "time_format": "15:04"
+            "time_format": "3:04 PM"
           }
         },
         {
@@ -54,7 +54,7 @@
           "trailing_diamond": "\ue0b0",
           "template": " \udb82\udd54 {{ .CurrentDate | date .Format }} ",
           "properties": {
-            "time_format": "15:04"
+            "time_format": "3:04 PM"
           }
         },
         {
