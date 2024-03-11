@@ -17,6 +17,9 @@
     "ingido": "#9090ff",
     "violet": "#ff90ff"
   },
+  "var": {
+    "filler": "."
+  },
   "blocks": [
     {
       "type": "prompt",
@@ -24,16 +27,18 @@
       "segments": [
         {
           "type": "time",
+          "foreground": "p:backgroundTime",
           "style": "diamond",
-          "template": "...{{ repeat (len .Format) \".\" }}. ",
+          "template": "{{ repeat 4 (.Var.filler) }}{{ repeat (len .Format) (.Var.filler) }}{{ if and (gt .CurrentDate.Hour 9) (lt .CurrentDate.Hour 13) }}.{{ end }}{{ if or (gt .CurrentDate.Hour 21) (eq .CurrentDate.Hour 0) }}.{{ end }} ",
           "properties": {
             "time_format": "3:04 PM"
           }
         },
         {
           "type": "path",
+          "foreground": "p:backgroundPath",
           "style": "diamond",
-          "template": "....{{ repeat (len .Path) \".\" }}.\n",
+          "template": "{{ repeat 5 (.Var.filler) }}{{ repeat (len .Path) (.Var.filler) }}\n",
           "properties": {
             "style": "folder"
           }
