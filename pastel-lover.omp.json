@@ -108,5 +108,11 @@
       ],
       "newline": true
     }
-  ]
+  ],
+  "secondary_prompt": {
+    "type": "text",
+    "style": "plain",
+    "foreground": "p:blue",
+    "template": "❯ "
+  }
 }
