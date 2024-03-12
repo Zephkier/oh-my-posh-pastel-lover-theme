@@ -1,4 +1,9 @@
-This README assumes you already know how to set custom OMP themes.
+# Installation
+
+Check out this [Oh My Posh video guide](https://youtu.be/-G6GbXGo4wo?si=ch5rhrPAy-ordeR4&t=138) for installation steps and to get a better understanding.<br>
+_(it's what I personally used!)_
+
+[![image](https://github.com/Zephkier/oh-my-posh-pastel-lover-theme/assets/147470417/3bcac056-5cbf-4127-a638-d1e7805d9f84)](https://youtu.be/-G6GbXGo4wo?si=ch5rhrPAy-ordeR4&t=138)
 
 # Look and Features
 
@@ -39,7 +44,7 @@ This README assumes you already know how to set custom OMP themes.
   ![10-pastel-lover-image](https://github.com/Zephkier/oh-my-posh-pastel-lover-theme/assets/147470417/a05e31dc-ff49-4c38-96f4-daaec8778704)
   <br>
 
-## With Stash
+### With Stash
 
 ![07-pastel-lover-image](https://github.com/Zephkier/oh-my-posh-pastel-lover-theme/assets/147470417/6ba6fbd9-ad1d-414b-a924-3508a2c21912)
 ![09-pastel-lover-image](https://github.com/Zephkier/oh-my-posh-pastel-lover-theme/assets/147470417/d3ba88fa-2942-4715-ae34-d95ffbb67d43)
