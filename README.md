@@ -1,40 +1,45 @@
-This README assumes you already know how to set custom themes on Oh My Posh (OMP).
+This README assumes you already know how to set custom OMP themes.
 
-# Overall Look
-![10-pastel-lover](https://github.com/Zephkier/oh-my-posh-pastel-lover-theme/assets/147470417/3e911b77-5774-4db1-86ec-c824bc5d5cac)
-![11-pastel-lover](https://github.com/Zephkier/oh-my-posh-pastel-lover-theme/assets/147470417/076d2b44-1125-456c-80be-80b497b3d65f)
+# Look and Features
 
-# Directory
-Starting directory<br>
-![1-pastel-lover](https://github.com/Zephkier/oh-my-posh-pastel-lover-theme/assets/147470417/6594510a-04b8-4b36-94d4-ddfe18eb8924)
+- Root directory
+- 1-digit hour format
+- Line break after command output<br>
+  ![01-pastel-lover-image](https://github.com/Zephkier/oh-my-posh-pastel-lover-theme/assets/147470417/67ea413f-dbab-449d-baac-cbe2d5a56565)
+  <br>
 
-(The '.' actually lines up with directory names)<br>
-![1-actual-pastel-lover](https://github.com/Zephkier/oh-my-posh-pastel-lover-theme/assets/147470417/814b4506-af78-4bb9-b5bc-9c2c8ee9d378)
+- 2-digit hour format
+- Error command<br>
+  ![02-pastel-lover-image](https://github.com/Zephkier/oh-my-posh-pastel-lover-theme/assets/147470417/cca33558-5cc9-4cf3-a25f-304022ea8de2)
+  <br>
 
-Other directories<br>
-![2-pastel-lover](https://github.com/Zephkier/oh-my-posh-pastel-lover-theme/assets/147470417/504a019b-0bc3-471f-8af8-da1f4446219f)
+- Only shows current directory<br>
+  ![03-pastel-lover-image](https://github.com/Zephkier/oh-my-posh-pastel-lover-theme/assets/147470417/0625fd68-8ddc-4cf8-8d73-cea7d5833c84)
+  <br>
 
 # Git
-## General
-To add into Staging Area only<br>
-![3-pastel-lover](https://github.com/Zephkier/oh-my-posh-pastel-lover-theme/assets/147470417/91a1d6af-15b9-49c2-b7c1-7c05e4247434)
 
-To add into Staging Area and to be committed<br>
-![4-pastel-lover](https://github.com/Zephkier/oh-my-posh-pastel-lover-theme/assets/147470417/92e789f0-2a4d-4bcb-85d9-d016cc1d2264)
+- Changes not staged for commit<br>
+  ![04-pastel-lover-image](https://github.com/Zephkier/oh-my-posh-pastel-lover-theme/assets/147470417/b533b95b-cea0-4cc8-9943-873003be8749)
+  <br>
 
-To be committed only<br>
-![5-pastel-lover](https://github.com/Zephkier/oh-my-posh-pastel-lover-theme/assets/147470417/5b157595-7e55-4c4c-89f8-be4b43181340)
+- Changes to be committed<br>
+  ![05-pastel-lover-image](https://github.com/Zephkier/oh-my-posh-pastel-lover-theme/assets/147470417/9711b15a-5924-4c3f-9374-e90ae7d03355)
+  <br>
 
-Repo is okay<br>
-![6-pastel-lover](https://github.com/Zephkier/oh-my-posh-pastel-lover-theme/assets/147470417/b55a0575-868c-4185-b714-66a474289a37)
+- Both of the above<br>
+  ![06-pastel-lover-image](https://github.com/Zephkier/oh-my-posh-pastel-lover-theme/assets/147470417/ca93cb02-9951-4f70-98ba-14d77989800a)
+  <br>
+
+- Nothing to commit, clean working tree<br>
+  ![08-pastel-lover-image](https://github.com/Zephkier/oh-my-posh-pastel-lover-theme/assets/147470417/812c5269-e2c8-4cb7-b968-31cb185e062a)
+  <br>
+
+- Connected to remote<br>
+  ![10-pastel-lover-image](https://github.com/Zephkier/oh-my-posh-pastel-lover-theme/assets/147470417/a05e31dc-ff49-4c38-96f4-daaec8778704)
+  <br>
 
 ## With Stash
-![7-pastel-lover](https://github.com/Zephkier/oh-my-posh-pastel-lover-theme/assets/147470417/460c4ca1-0d17-44e5-8428-c5ca6a1319ed)
 
-![8-pastel-lover](https://github.com/Zephkier/oh-my-posh-pastel-lover-theme/assets/147470417/0892e654-c333-44da-8f82-56db2f719b3b)
-
-## With Remote
-![9-pastel-lover](https://github.com/Zephkier/oh-my-posh-pastel-lover-theme/assets/147470417/a8f92721-11ae-4697-b9d1-529c1bfa1aaa)
-
-(The GitHub icon isn't actually spaced so far apart)<br>
-![9-actual-pastel-lover](https://github.com/Zephkier/oh-my-posh-pastel-lover-theme/assets/147470417/9b05a56e-27b4-4462-b4a2-882a7228d26f)
+![07-pastel-lover-image](https://github.com/Zephkier/oh-my-posh-pastel-lover-theme/assets/147470417/6ba6fbd9-ad1d-414b-a924-3508a2c21912)
+![09-pastel-lover-image](https://github.com/Zephkier/oh-my-posh-pastel-lover-theme/assets/147470417/d3ba88fa-2942-4715-ae34-d95ffbb67d43)
