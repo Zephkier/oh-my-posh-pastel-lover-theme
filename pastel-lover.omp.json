@@ -31,32 +31,10 @@
             "alignment": "left",
             "segments": [
                 {
-                    "properties": {
-                        "cache_duration": "none",
-                        "time_format": "3:04 PM"
-                    },
-                    "template": "{{ repeat 4 (.Var.filler) }}{{ repeat (len .Format) (.Var.filler) }}{{ if and (gt .CurrentDate.Hour 9) (lt .CurrentDate.Hour 13) }}.{{ end }}{{ if or (gt .CurrentDate.Hour 21) (eq .CurrentDate.Hour 0) }}.{{ end }} ",
-                    "foreground": "p:backgroundTime",
-                    "type": "time",
-                    "style": "diamond"
+                    "template": " \n",
+                    "type": "text",
+                    "style": "plain"
                 },
-                {
-                    "properties": {
-                        "cache_duration": "none",
-                        "style": "folder"
-                    },
-                    "template": "{{ repeat 5 (.Var.filler) }}{{ repeat (len .Path) (.Var.filler) }}\n",
-                    "foreground": "p:backgroundPath",
-                    "type": "path",
-                    "style": "diamond"
-                }
-            ],
-            "newline": true
-        },
-        {
-            "type": "prompt",
-            "alignment": "left",
-            "segments": [
                 {
                     "properties": {
                         "cache_duration": "none",
