@@ -1,23 +1,16 @@
 {
     "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
     "palette": {
-        "backgroundTime": "#90ffff",
-        "backgroundPath": "#ffff90",
-        "backgroundPython": "#306998",
-        "backgroundGit": "#90ff90",
         "black": "#000000",
-        "blue": "#90ffff",
-        "foreground": "#000000",
-        "green": "#90ff90",
-        "indigo": "#9090ff",
-        "orange": "#ff9045",
-        "red": "#ff9090",
-        "violet": "#ff90ff",
         "white": "#ffffff",
-        "yellow": "#ffff90"
-    },
-    "var": {
-        "filler": "."
+        "red": "#ff9090",
+        "orange": "#ff9045",
+        "yellow": "#ffff90",
+        "green": "#90ff90",
+        "blue": "#90ffff",
+        "indigo": "#9090ff",
+        "violet": "#ff90ff",
+        "pythonBlue": "#4584b6"
     },
     "console_title_template": "{{.Shell}} @ {{.Folder}}",
     "secondary_prompt": {
@@ -35,8 +28,8 @@
                     "type": "executiontime",
                     "style": "diamond",
                     "trailing_diamond": "\ue0b0",
-                    "background": "p:backgroundTime",
-                    "foreground": "p:foreground",
+                    "background": "p:blue",
+                    "foreground": "p:black",
                     "template": " \udb81\udf8c {{ .FormattedMs }} ",
                     "properties": {
                         "always_enabled": true,
@@ -48,8 +41,8 @@
                     "style": "diamond",
                     "leading_diamond": "<transparent>\ue0b0</>",
                     "trailing_diamond": "\ue0b0",
-                    "background": "p:backgroundPath",
-                    "foreground": "p:foreground",
+                    "background": "p:yellow",
+                    "foreground": "p:black",
                     "template": " \ue5ff {{ .Path }} ",
                     "properties": {
                         "style": "folder"
@@ -60,8 +53,8 @@
                     "style": "diamond",
                     "leading_diamond": "<transparent>\ue0b0</>",
                     "trailing_diamond": "\ue0b0",
-                    "background": "p:backgroundPython",
-                    "foreground": "p:foreground",
+                    "background": "p:pythonBlue",
+                    "foreground": "p:black",
                     "template": " \ue235 ({{ .Venv }}) ",
                     "properties": {
                         "fetch_virtual_env": true,
@@ -73,8 +66,8 @@
                     "style": "diamond",
                     "leading_diamond": "<transparent>\ue0b0</>",
                     "trailing_diamond": "\ue0b0",
-                    "background": "p:backgroundGit",
-                    "foreground": "p:foreground",
+                    "background": "p:green",
+                    "foreground": "p:black",
                     "background_templates": ["{{ if or (.Working.Changed) (.Staging.Changed) }}p:orange{{ end }}", "{{ if and (gt .Ahead 0) (gt .Behind 0) }}p:red{{ end }}", "{{ if gt .Ahead 0 }}p:blue{{ end }}", "{{ if gt .Behind 0 }}p:orange{{ end }}"],
                     "template": "{{ if .UpstreamURL }} {{ .UpstreamIcon }}{{ end }} {{ .HEAD }} {{if .BranchStatus }}{{ .BranchStatus }}{{ end }} <transparent>\ue0b1</>{{ if not (or (.Working.Changed) (.Staging.Changed)) }} \uf00c {{ end }}{{ if .Working.Changed }} \uf044 {{ .Working.String }} {{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }}<transparent>\ue0b1</>{{ end }}{{ if .Staging.Changed }} \uf046 {{ .Staging.String }} {{ end }}{{ if gt .StashCount 0 }}<transparent>\ue0b1</> \uf0c7 {{ .StashCount }} {{ end }}",
                     "properties": {
@@ -87,7 +80,7 @@
                     "style": "diamond",
                     "leading_diamond": "<transparent>\ue0b0</>",
                     "background": "p:red",
-                    "foreground": "p:foreground",
+                    "foreground": "p:black",
                     "template": " \uf12a "
                 }
             ]
