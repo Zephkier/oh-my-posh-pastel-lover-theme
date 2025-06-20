@@ -1,0 +1,128 @@
+{
+    "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+    "palette": {
+        "backgroundTime": "#90ffff",
+        "backgroundPath": "#ffff90",
+        "backgroundPython": "#306998",
+        "backgroundGit": "#90ff90",
+        "black": "#000000",
+        "blue": "#90ffff",
+        "foreground": "#000000",
+        "green": "#90ff90",
+        "indigo": "#9090ff",
+        "orange": "#ff9045",
+        "red": "#ff9090",
+        "violet": "#ff90ff",
+        "white": "#ffffff",
+        "yellow": "#ffff90"
+    },
+    "var": {
+        "filler": "."
+    },
+    "console_title_template": "@ {{.Folder}}",
+    "transient_prompt": {
+        "background": "transparent",
+        "foreground": "p:blue",
+        "template": "\n\ue285 "
+    },
+    "secondary_prompt": {
+        "background": "transparent",
+        "foreground": "p:blue",
+        "template": "\ue285 "
+    },
+    "blocks": [
+        {
+            "type": "prompt",
+            "alignment": "left",
+            "segments": [
+                {
+                    "template": " \n",
+                    "type": "text",
+                    "style": "plain"
+                },
+                {
+                    "properties": {
+                        "cache_duration": "none",
+                        "time_format": "3:04 PM"
+                    },
+                    "trailing_diamond": "\ue0b0",
+                    "template": " \udb82\udd54 {{ .CurrentDate | date .Format }} ",
+                    "foreground": "p:foreground",
+                    "background": "p:backgroundTime",
+                    "type": "time",
+                    "style": "diamond"
+                },
+                {
+                    "properties": {
+                        "cache_duration": "none",
+                        "style": "folder"
+                    },
+                    "leading_diamond": "<transparent>\ue0b0</>",
+                    "trailing_diamond": "\ue0b0",
+                    "template": " \ue5ff {{ .Path }} ",
+                    "foreground": "p:foreground",
+                    "background": "p:backgroundPath",
+                    "type": "path",
+                    "style": "diamond"
+                },
+                {
+                    "properties": {
+                        "display_mode": "context",
+                        "fetch_virtual_env": true
+                    },
+                    "leading_diamond": "<transparent>\ue0b0</>",
+                    "trailing_diamond": "\ue0b0",
+                    "template": " \ue235 ({{ .Venv }}) ",
+                    "foreground": "p:foreground",
+                    "background": "p:backgroundPython",
+                    "type": "python",
+                    "style": "diamond"
+                },
+                {
+                    "properties": {
+                        "cache_duration": "none",
+                        "fetch_stash_count": true,
+                        "fetch_status": true,
+                        "fetch_upstream_icon": true
+                    },
+                    "leading_diamond": "<transparent>\ue0b0</>",
+                    "trailing_diamond": "\ue0b0",
+                    "template": "{{ if .UpstreamURL }} {{ .UpstreamIcon }}{{ end }} {{ .HEAD }} {{if .BranchStatus }}{{ .BranchStatus }}{{ end }} <transparent>\ue0b1</>{{ if not (or (.Working.Changed) (.Staging.Changed)) }} \uf00c {{ end }}{{ if .Working.Changed }} \uf044 {{ .Working.String }} {{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }}<transparent>\ue0b1</>{{ end }}{{ if .Staging.Changed }} \uf046 {{ .Staging.String }} {{ end }}{{ if gt .StashCount 0 }}<transparent>\ue0b1</> \uf0c7 {{ .StashCount }} {{ end }}",
+                    "foreground": "p:foreground",
+                    "background": "p:backgroundGit",
+                    "type": "git",
+                    "style": "diamond",
+                    "background_templates": ["{{ if or (.Working.Changed) (.Staging.Changed) }}p:orange{{ end }}", "{{ if and (gt .Ahead 0) (gt .Behind 0) }}p:red{{ end }}", "{{ if gt .Ahead 0 }}p:blue{{ end }}", "{{ if gt .Behind 0 }}p:orange{{ end }}"]
+                },
+                {
+                    "properties": {
+                        "cache_duration": "none"
+                    },
+                    "leading_diamond": "<transparent>\ue0b0</>",
+                    "template": " \uf12a ",
+                    "foreground": "p:foreground",
+                    "background": "p:red",
+                    "type": "status",
+                    "style": "diamond"
+                }
+            ]
+        },
+        {
+            "type": "prompt",
+            "alignment": "left",
+            "segments": [
+                {
+                    "properties": {
+                        "cache_duration": "none"
+                    },
+                    "template": "\ue285 ",
+                    "foreground": "p:blue",
+                    "type": "text",
+                    "style": "plain"
+                }
+            ],
+            "newline": true
+        }
+    ],
+    "version": 3
+}
