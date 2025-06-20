@@ -37,14 +37,14 @@
                 },
                 {
                     "properties": {
-                        "cache_duration": "none",
-                        "time_format": "03:04 PM"
+                        "always_enabled": true,
+                        "style": "amarillo"
                     },
                     "trailing_diamond": "\ue0b0",
-                    "template": " \udb82\udd54 {{ .CurrentDate | date .Format }} ",
+                    "template": " \udb81\udf8c {{ .FormattedMs }} ",
                     "foreground": "p:foreground",
                     "background": "p:backgroundTime",
-                    "type": "time",
+                    "type": "executiontime",
                     "style": "diamond"
                 },
                 {
